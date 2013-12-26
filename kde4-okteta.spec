@@ -5,12 +5,12 @@
 Summary:	okteta - Binary file editor
 Summary(pl.UTF-8):	okteta - Edytor plików binarnych
 Name:		kde4-okteta
-Version:	4.11.3
+Version:	4.12.0
 Release:	1
 License:	GPL
 Group:		X11/Development/Tools
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.xz
-# Source0-md5:	61654dd04cddc7f13c1f847995df62a5
+# Source0-md5:	fc50f06f51fca24b6700327ccb8f1efd
 URL:		http://www.kde.org/
 BuildRequires:	kde4-kdebase-devel >= %{version}
 BuildRequires:	qt4-build >= %{qtver}
@@ -77,7 +77,7 @@ rm -rf $RPM_BUILD_ROOT%{_iconsdir}/locolor
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%pos	-p /sbin/ldconfig
+%post	-p /sbin/ldconfig
 %postun	-p /sbin/ldconfig
 
 %files
