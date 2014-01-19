@@ -21,6 +21,7 @@ BuildRequires:	shared-mime-info
 BuildRequires:	subversion-devel >= 0.37.0
 BuildRequires:	utempter-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+Obsoletes:	kde4-kdesdk-okteta
 
 %description
 The program Okteta is another implementation of a standalone, plain
